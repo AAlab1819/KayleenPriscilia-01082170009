@@ -86,14 +86,15 @@ In the one of the *while* parameter, I use:
 
         (randomDen%i==0&&randomNum%i==0)
         
-Which means that the *while* condition is proceed if both the denominator and numerator can be divided with the current counter (2 until *sum*).
+Which means that the *while* condition will proceed if both the denominator and numerator can be divided with the current counter (2 until *sum*).
 
-For the conclusion, it will generate random numbers until it finds the numerator and denominator that qualified the conditions that must be followed according to the problem. 
+For the conclusion, it will generate random numbers until it finds the numerator and denominator that qualified the conditions that must be followed according to the requirements.
 
 # PROBLEM A-988
 # DIVERSE TEAM
 -----------------------------------------------------------------------------------------------------------------------------
-For this problem called *Diverse Team*, they liked to form a certain number of students TeamMembers_Num in a team with each have to has different ratings < rating[student_total] >
+For this problem called *Diverse Team* I use an array to know the number of position and value in a certain position. 
+According to the problem, they liked to form a certain number of students (TeamMembers_Num) in a team with each have to has different ratings < rating[student_total] >
 
 the amount of student is inputted, as well as the amount of student in one team that they want to form and also the ratings for each of them. 
 
