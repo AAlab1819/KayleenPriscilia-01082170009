@@ -13,7 +13,6 @@ int main()
     randomNum = rand()%sum;
     randomDen = rand()%sum;
 
-    int counterNum;
     while(sum<3 || sum>10000)
     {
         cin >> sum;
