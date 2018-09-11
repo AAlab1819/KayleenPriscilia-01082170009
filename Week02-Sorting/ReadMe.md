@@ -1,5 +1,5 @@
-# [SPYKE TALKS - A 291](http://codeforces.com/problemset/problem/291/A)
 ---------------------------------------------------------------------------------------------------------------------------------------
+# [SPYKE TALKS - A 291](http://codeforces.com/problemset/problem/291/A)
 
 ## Problem Explanation
 According to the problem in part A-291, named spyke talks. Polycarpus wants to know how many of his assistants Spyking to each other, spyking to outside, or not spyking at all. 
@@ -59,10 +59,9 @@ After the sorting is done, the next step is to check if there are 2 same integer
 ## Code Forces Acceptance Prove   
 ![SpykeTalks](https://github.com/AAlab1819/KayleenPriscilia-01082170009/blob/master/Week02-Sorting/Spyke%20Talks.PNG?raw=true)
     
-
+--------------------------------------------------------------------------------------------------------------------------------------
 # [DRAGON - A230](http://codeforces.com/problemset/problem/230/A)
 
---------------------------------------------------------------------------------------------------------------------------------------
 ## Problem Explanation
 
 For this task, I was asked to find out either Kirito will win or lose, by print out YES or NO. Before I do that, I shall input some integers, as follows:
