@@ -59,13 +59,65 @@ After the sorting is done, the next step is to check if there are 2 same integer
 ## Code Forces Acceptance Prove   
 ![SpykeTalks](https://github.com/AAlab1819/KayleenPriscilia-01082170009/blob/master/Week02-Sorting/Spyke%20Talks.PNG?raw=true)
     
---------------------------------------------------------------------------------------------------------------------------------------
+
 # [DRAGON - A230](http://codeforces.com/problemset/problem/230/A)
 
 --------------------------------------------------------------------------------------------------------------------------------------
-For this task on number A 230, "DRAGON". 
+## Problem Explanation
 
-# Problem Explanation
+For this task, I was asked to find out either Kirito will win or lose, by print out YES or NO. Before I do that, I shall input some integers, as follows:
+- First line : Kirito's initial strength, how many dragons/level that Kirito wanted to beat (dragons_num). 
+- Second line until dragons_num : Dragon's strength, the value of strength that Kirito will gain if he beats the dragon. 
+In order to win the game, Kirito's strength must more than the dragon's strength. 
+
+## Solution 
+
+The first thing that I must do is to sort the dragon's strength from the smallest to the largest integer. The reason why I do that in particular is certainly because Kirita tend to fight the dragon by the weakest. I applied what is called Comb Sort for the sorting part of this coding. Basically, Comb Sort is an improvement over Bubble Sort.
+
+    int getNextGap(int gap)
+    {
+       gap = (gap*10)/13; // For this type of sorting, the current gap (with the size of array as the initial gap)
+                              always (gap*10)/13. //
+       if(gap<1)
+    {
+        return 1;   
+    }
+
+    return gap;
+    }
+  
+For Comb Sort, it has certain rules that is quite different than Bubble sort. First, Comb Sort compares two integers, same as the Bubble Sort, but, while bubble sort compare only between one integer and another one in the element next to it, Comb Sort uses what is called 'gap'. It will compares an integer with another integer with a certain gap of element(s). 
+
+The Comb Sort function will be like this: 
+
+    void combSort (int a[], int d[], int n)
+    {
+    int gap = n;
+    bool swapped = true;
+
+    while(gap!=1 || swapped == true)
+    {
+        gap = getNextGap(gap);
+
+        swapped = false;
+
+        for (int i=0; i<n-gap; i++)
+        {
+            for(int j=0; j<2; j++)
+            {
+            if(a[i] > a[i+gap])
+            {
+                swap(a[i], a[i+gap]);
+                swap(d[i], d[i+gap]);
+                swapped = true;
+            }
+            }
+        }
+    }
+}
+
+
+
 
 
 
