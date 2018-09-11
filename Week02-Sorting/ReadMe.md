@@ -1,12 +1,10 @@
-# SPYKE TALKS - A 291 
-[ http://codeforces.com/problemset/problem/291/A ]
-
+# [SPYKE TALKS - A 291](http://codeforces.com/problemset/problem/291/A)
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-# Problem Explanation
+## Problem Explanation
 According to the problem in part A-291, named spyke talks. Polycarpus wants to know how many of his assistants Spyking to each other, spyking to outside, or not spyking at all. 
 
-# Solution
+## Solution
 First thing that I did is to sort to make the job much more easier. Therefore, I use brick sorting, commonly known as odd-even sorting. 
   
      void brickSort (int arr[], int num)
@@ -58,12 +56,11 @@ After the sorting is done, the next step is to check if there are 2 same integer
     }
     
    
-# Code Forces Acceptance Prove   
+## Code Forces Acceptance Prove   
 ![SpykeTalks](https://github.com/AAlab1819/KayleenPriscilia-01082170009/blob/master/Week02-Sorting/Spyke%20Talks.PNG?raw=true)
     
 --------------------------------------------------------------------------------------------------------------------------------------
-# DRAGON - A230
-[ http://codeforces.com/problemset/problem/230/A ]
+# [DRAGON - A230](http://codeforces.com/problemset/problem/230/A)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 For this task on number A 230, "DRAGON". 
