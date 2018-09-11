@@ -1,5 +1,6 @@
 # SPYKE TALKS
-# A 291 
+## A 291 
+### http://codeforces.com/problemset/problem/291/A
 ------------------------------------------------------------------------------------------------------------------------------------------
 According to the problem in part A-291, named spyke talks. Polycarpus wants to know how many of his assistants Spyking to each other, spyking to outside, or not spyking at all. 
 
@@ -52,6 +53,8 @@ After the sorting is done, the next step is to check if there are 2 same integer
     }    
     cout << counter << endl; (print to the screen)
     }
+    
+    ![image](
     
 --------------------------------------------------------------------------------------------------------------------------------------
 # DRAGON 
