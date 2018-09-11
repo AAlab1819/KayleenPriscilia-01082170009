@@ -67,7 +67,8 @@ After the sorting is done, the next step is to check if there are 2 same integer
 For this task, I was asked to find out either Kirito will win or lose, by print out YES or NO. Before I do that, I shall input some integers, as follows:
 - First line : Kirito's initial strength, how many dragons/level that Kirito wanted to beat (dragons_num). 
 - Second line until dragons_num : Dragon's strength, the value of strength that Kirito will gain if he beats the dragon. 
-In order to win the game, Kirito's strength must more than the dragon's strength. 
+
+In order to win each level of the game, Kirito's strength must more than the dragon's strength. 
 
 ## Solution 
 
@@ -113,7 +114,7 @@ The Comb Sort function will be like this:
             }
         }
     }
-}
+    }
 
 
 
