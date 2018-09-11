@@ -54,7 +54,8 @@ After the sorting is done, the next step is to check if there are 2 same integer
     cout << counter << endl; (print to the screen)
     }
     
-    ![image](
+   
+![SpykeTalks](https://github.com/AAlab1819/KayleenPriscilia-01082170009/blob/master/Week02-Sorting/Spyke%20Talks.PNG?raw=true)
     
 --------------------------------------------------------------------------------------------------------------------------------------
 # DRAGON 
