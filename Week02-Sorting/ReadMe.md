@@ -159,12 +159,13 @@ As usual, what we do first is to sort, of course, to make the job easier for the
         {
             int temp = arr[i];  // save the value of arr[i] 
             
-            for(int j=i; j>=gap && arr[j-gap]>temp; j-=gap)  
+            for(int j=i; j>=gap && arr[j-gap]>temp; j-=gap) 
             {
-                arr[j]=arr[j-gap]; 
+                arr[j]=arr[j-gap]; // if the arr[j-gap] is more than temp /saved arr[i], then it will change arr[j] into arr[j-gap]
+                
             }
 
-                arr[j]=temp;
+                arr[j]=temp; // the arr[j] will be initialized with the temp/ saved arr[i]. So it will switch index.
 
         }
     }
