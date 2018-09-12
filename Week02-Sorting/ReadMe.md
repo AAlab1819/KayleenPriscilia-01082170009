@@ -2,11 +2,11 @@
 # [SPYKE TALKS - A 291](http://codeforces.com/problemset/problem/291/A)
 
 ## Problem Explanation
-According to the problem in part A-291, named spyke talks. Polycarpus wants to know how many of his assistants Spyking to each other, spyking to outside, or not spyking at all. 
+According to the problem in part A-291, named spyke talks. Polycarpus wants to know how many of his secretaries Spyking to each other, spyking to outside, or not spyking at all. The Spyke network assign a unique ID to the call. If the secretaries are talking to each other, then the call ID will be the same positive integer. If the secretaries are not talking with Spyke at all, than the session number of the call is 0. Spyke conference aren't permitted, means that if there are more than 2 same integers that Polycarpus inputted, than there's must be a mistake and it will print an integer -1, means there are input error. 
 
 ## Solution
-First thing that I did is to sort to make the job much more easier. Therefore, I use brick sorting, commonly known as odd-even sorting. 
-  
+First thing that I did is to sort to make the job much more easier. Therefore, I use brick sorting, commonly known as odd-even sorting.
+
      void brickSort (int arr[], int num)
      { bool sorted = false; 
     while(!sorted) // while the numbers is not sorted it will loop
@@ -82,7 +82,6 @@ The first thing that I must do is to sort the dragon's strength from the smalles
     {
         return 1;   
     }
-
     return gap;
     }
   
@@ -93,32 +92,93 @@ The Comb Sort function will be like this:
     void combSort (int a[], int d[], int n)
     {
     int gap = n;
-    bool swapped = true;
-
-    while(gap!=1 || swapped == true)
-    {
-        gap = getNextGap(gap);
-
-        swapped = false;
-
-        for (int i=0; i<n-gap; i++)
-        {
-            for(int j=0; j<2; j++)
-            {
-            if(a[i] > a[i+gap])
+    bool swapped = true; // initial boolean 'swapped' as true to tag that the integers are not sorted yet.
+    while(gap!=1 || swapped == true) 
+    {  
+        gap = getNextGap(gap); // using the funtion to find the gap
+        swapped = false; // to stop the looping if the integers are already sorted. 
+        for (int i=0; i<n-gap; i++) // first integer to be check is from index 0 until n-gap
+        { 
+          if(a[i] > a[i+gap]) // if the first integer of index i is more than index (i+gap) it will swap. 
             {
                 swap(a[i], a[i+gap]);
-                swap(d[i], d[i+gap]);
-                swapped = true;
-            }
-            }
+                swap(d[i], d[i+gap]); 
+                swapped = true; // initialize bool. 
+            } 
         }
     }
     }
 
-
-
-
-
-
+  After the levels of dragon that Kirito wants to kill are already sorted, then the next step is quite simple. It is to check the condition if the dragons strength (level[i]) is less than Kirito strength then Kirito may gain strength that is already inputted by the user. 
   
+   If Kirito's strength is more than the dragon's strength until i=dragons_num-1 (meaning last level/dragon of the game), Kirito wins. (PRINTED "YES"). 
+    
+   But, if Kirito's strength is less than the dragon's strength at a certain level then Kirito will automatically lose the game. Here are the codes for these conditions. 
+  
+     for(int i=0; i<dragons_num; i++)
+     {
+       if(level[i]<krito_initial_strength)
+       {
+           krito_initial_strength=krito_initial_strength+plus_strength[i];
+           if(i==dragons_num-1)
+           {
+               cout << "YES" << endl;
+           }
+       }
+       if(level[i]>=krito_initial_strength)
+       {
+           cout << "NO" << endl;
+           break;
+       }
+
+     }
+
+## Acceptance Prove
+![Dragons](
+---------------------------------------------------------------------------------------------------------------------------------------
+# [Oath Of the Night's Watch - A768](http://codeforces.com/problemset/problem/768/A)
+
+## Problem Explanation
+  
+- There are (stewards_num) stewards and each have their own strength. 
+- Jon Snow only likes to support a steward if there exists at least one steward who has strength strictly less than him and at least     one steward who has strength strictly greater than him.
+- Input ::  stewards_num (stewards total) 
+            strength[strewards_num] (strength for each steward) 
+- So, the output must be the numbers of stewards Jon Snow will support. 
+
+## Solution
+
+As usual, what we do first is to sort, of course, to make the job easier for the dashing Jon Snow. In this case, I use ShellSort. It will start sorting with a big gap, and it will reduce the gap until the integers are sorted. 
+    
+    int shellSort (int arr[], int n)
+    {
+    for(int gap=n/2; gap>0; gap/=2) // gap intial is n/2 and the gap will decrease by gap/2.
+    {
+        for(int i=gap; i<n; i++) 
+        {
+            int temp = arr[i];  // save the value of arr[i] 
+            
+            for(int j=i; j>=gap && arr[j-gap]>temp; j-=gap)  
+            {
+                arr[j]=arr[j-gap]; 
+            }
+
+                arr[j]=temp;
+
+        }
+    }
+    }
+
+After the sorting is done, now we know that the first index of array is the smallest and the last index of array is the largest integer. Back to the explanation of the problem, Jon Snow will support steward as long as there are stewards with strength less than him and also at least one steward who has strength greater than him. So as long the certain steward's strength is more than strength[0] and less than strength[stewards_num], Jon Snow will be able to assist him.
+
+    for(int i=0; i<stewards_num; i++)
+    {
+
+        if(strength[i]>strength[0] && strength[i]<strength[stewards_num-1])
+        {
+                counter++;
+        }
+    }
+
+    cout << counter << endl;
+
