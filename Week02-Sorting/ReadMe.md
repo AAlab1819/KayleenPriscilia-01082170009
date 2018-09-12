@@ -56,7 +56,7 @@ After the sorting is done, the next step is to check if there are 2 same integer
     }
     
    
-## Code Forces Acceptance Prove   
+## CodeForces Acceptance Prove   
 ![SpykeTalks](https://github.com/AAlab1819/KayleenPriscilia-01082170009/blob/master/Week02-Sorting/Spyke%20Talks.PNG?raw=true)
     
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -133,8 +133,9 @@ The Comb Sort function will be like this:
 
      }
 
-## Acceptance Prove
-![Dragons](
+## CodeForces Acceptance Prove
+
+![Dragons](https://github.com/AAlab1819/KayleenPriscilia-01082170009/blob/master/Week02-Sorting/dragons.PNG?raw=true)
 ---------------------------------------------------------------------------------------------------------------------------------------
 # [Oath Of the Night's Watch - A768](http://codeforces.com/problemset/problem/768/A)
 
@@ -182,3 +183,6 @@ After the sorting is done, now we know that the first index of array is the smal
 
     cout << counter << endl;
 
+## CodeForces Acceptance Prove
+
+![Oath](https://github.com/AAlab1819/KayleenPriscilia-01082170009/blob/master/Week02-Sorting/Oath.PNG?raw=true)
