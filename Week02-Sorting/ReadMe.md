@@ -36,6 +36,7 @@ First thing that I did is to sort to make the job much more easier. Therefore, I
     }
 
 After the sorting is done, the next step is to check if there are 2 same integer, or not. 
+So if there are same integers, since it is already sorted, the same integers will be automatically side by side. And if current spyke_id on index i is the same as spyke_id on index i+2, means that there are more than 2 same integer which will outputted as -1 immediately (using break). The console wont read 0 integer because of the condition spyke_id[i]!=0 in if condition which will not increase the counter or even initialize the counter as -1. 
 
      for(int i=0; i<=secretaries_num;i++)
     {
