@@ -71,4 +71,34 @@ and to sum all of the sequence, I use for loop.
 ## Solution 
 Hence, I use flood-fill algorithm to determine the array that connected with given array points. The time complexity of flood-fill algorithm is O(nxm), which is more effective than the regular looping. 
 
+The flood-fill algorithm that I use, is as follows: 
+
+     void floodFillUtil (char screen[M][N], int x, int y)
+    {
+    if(x<0||x>=M||y<0||y<0||y>=N)
+    {
+        return; // to stop the recursive function
+    }
+    if(screen[x][y])
+    {
+        return; // to stop the recursive function
+    }
+
+    if(screen[x][y]=='*')
+    {
+        counter++; // if it meets '*' the counter will increase
+        return;
+    }
+
+    screen[x][y] = 1;
+
+    floodFillUtil(screen, x+1, y); // to detect the top part of arrays
+    floodFillUtil(screen, x-1, y); // to detect the bttom part of arrays
+    floodFillUtil(screen, x, y+1); // to detect the right part of arrays
+    floodFillUtil(screen, x, y-1); // to detect the left part of arrays
+
+    screen[x][y] = indexCounter;
+
+    }
+
 
