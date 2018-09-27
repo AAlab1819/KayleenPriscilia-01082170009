@@ -57,3 +57,15 @@ In this case for the sequence number , I use recursive function below :
     }
     
 and to sum all of the sequence, I use for loop.
+
+# [Igor In The Museum](http://codeforces.com/contest/598/problem/D)
+
+## Problem Explanation 
+- The museum that Igor visited has nxm cells ( 2d array )
+- empty cells are marked with `.` and impassable cells are marked with `*` (each `*` have a picture). 
+- Calculate the maximum number of pictures that Igor can see from his starting points. 
+
+## Solution 
+Hence, I use flood-fill algorithm to determine the array that connected with given array points. The time complexity of flood-fill algorithm is O(nxm), which is more effective than the regular looping. 
+
+
