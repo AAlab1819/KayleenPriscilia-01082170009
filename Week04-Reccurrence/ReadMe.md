@@ -1,10 +1,10 @@
-**Buttons - 268 B
+# [Buttons - 268 B](http://codeforces.com/problemset/problem/268/B)
 
-*Problem Explanation
+## Problem Explanation
 
 The problem asked to give output of how many worst probibilty the buttons are pressed. If the right button is pressed then it will stay pressed. But if Manao pressed the wrong button, all the buttons are resetted, which means, all the buttons will unpressed and Manao have to start from the beginning.
 
-*Solution
+## Solution
 
 So, for example, if there are 3 buttons, then,
 
@@ -42,15 +42,16 @@ for example, The number of buttons is 4, then Manao has to push the buttons ( 1+
 
 In this case for the sequence number , I use recursive function below :
 
- int pressed_code(int code_amount )
-  {
-  if (counter<=code_amount)
-   {
-   sequence = counter+ sequence;
-   counter++;
-   pressed_code(code_amount);
-   }
+    int pressed_code(int code_amount )
+    {
+    if (counter<=code_amount)
+    {
+    sequence = counter+ sequence;
+    counter++;
+    pressed_code(code_amount);
+    }
 
-  return sequence;
-  }
+    return sequence;
+    }
+    
 and to sum all of the sequence, I use for loop.
