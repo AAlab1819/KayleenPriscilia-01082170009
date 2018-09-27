@@ -6,6 +6,8 @@ The problem asked to give output of how many worst probibilty the buttons are pr
 
 ## Solution
 
+[**SUBMISSION**](http://codeforces.com/contest/268/submission/43337162)
+
 So, for example, if there are 3 buttons, then,
 
 - Button 1 : 3 + 1
