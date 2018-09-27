@@ -8,24 +8,26 @@ The problem asked to give output of how many worst probibilty the buttons are pr
 
 So, for example, if there are 3 buttons, then,
 
-Button 1 : 3 + 1
-Button 2 : 2
-Button 3 : 1
+- Button 1 : 3 + 1
+- Button 2 : 2
+- Button 3 : 1
 Worst Scenario = 7 times of pressing
 
 #SecondExample = The code have 4 buttons, then
 
-Button 1 : 4 + 2 + 1
-Button 2 : 3 + 1
-Button 3 : 2
-Button 4 : 1
+- Button 1 : 4 + 2 + 1
+- Button 2 : 3 + 1
+- Button 3 : 2
+- Button 4 : 1
+
 #ThirdExample = 5 buttons code.
 
-Button 1 : 5 + 3 + 2 + 1
-Button 2 : 4 + 2 + 1
-Button 3 : 3 + 1
-Button 4 : 2
-Button 5 : 1
+- Button 1 : 5 + 3 + 2 + 1
+- Button 2 : 4 + 2 + 1
+- Button 3 : 3 + 1
+- Button 4 : 2
+- Button 5 : 1
+
 as you can see, for each button-pressed possibility, there are a sequence, which is
 
 1, 2 , 4, 7, 11, ....
