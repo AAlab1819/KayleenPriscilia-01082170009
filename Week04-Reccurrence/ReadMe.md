@@ -13,6 +13,7 @@ So, for example, if there are 3 buttons, then,
 - Button 1 : 3 + 1
 - Button 2 : 2
 - Button 3 : 1
+
 Worst Scenario = 7 times of pressing
 
 #SecondExample = The code have 4 buttons, then
@@ -30,7 +31,7 @@ Worst Scenario = 7 times of pressing
 - Button 4 : 2
 - Button 5 : 1
 
-as you can see, for each button-pressed possibility, there are a sequence, which is
+as you can see, for each button-pressed possibility, there is a sequence, which is
 
 1, 2 , 4, 7, 11, ....
 
