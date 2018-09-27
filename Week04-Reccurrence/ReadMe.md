@@ -100,5 +100,24 @@ The flood-fill algorithm that I use, is as follows:
     screen[x][y] = indexCounter;
 
     }
+    
+To detect the arrays that connected to the given array points in following rules:
+ - After the array are detected, than it cannot call the recursive function for the certain part, so all the arrays wont be Flood-          Filled. In other word, there are boundaries to call the floodFill function.
+ - while the detection, when it meets `.`, it will call the function again, since it is not `*`. (required the floodFill algorithm)
 
+         for(index=0; index<start_point; index++)
+          {
+       cin >> rowInput >> colInput;
+       if(!screen[rowInput-1][colInput-1])
+       {
+           counter=0;
+           indexCounter++;
+           floodFillUtil(screen, rowInput-1, colInput-1); // do floodFill function
+           counterTot[indexCounter]=counter; // the counter will be save in different array
+
+       }
+
+       cout << counterTot[screen[rowInput-1][colInput-1]]<< endl;
+
+         }
 
