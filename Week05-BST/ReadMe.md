@@ -1,6 +1,6 @@
-# [PARTY-115 A](http://codeforces.com/problemset/problem/115/A)
+# PARTY-115 A
 
-## PROBLEM EXPLANATION 
+## [PROBLEM EXPLANATION](http://codeforces.com/problemset/problem/115/A)) 
 
    - Each employee may or may not have immediate manager/suporior, inputted the index where the manager/superior supposed to be 
    - The employee that do not have an immeidate manager/superior is inputted `-1`
@@ -48,9 +48,9 @@ With that being said, `k = 1 ` and while k>0, `-1 = employee[1].` and the `count
 the `ans` is the largest integer between `ans` and `counter` for each loops until the  `for` looping is finished. 
 
 
-# [CHRISTMAS PRUCE - 913B](http://codeforces.com/problemset/problem/913/B)
+# CHRISTMAS PRUCE - 913B
 
-## PPROBLEM EXPLANATION
+## [PPROBLEM EXPLANATION](http://codeforces.com/problemset/problem/913/B)
 
    Basically, there is a rooted tree where it has a root, vertex u (child of vertex v), vertex v (parent of vertex u), and a leaf (a vertex that doesn't have children and has a parent). We are asked to find out if the rooted tree is a spruce if its every non-leaf vertex has at least 3 leaf children, or not. The example of the input and output can be seen from the problem linked above. 
    
@@ -95,16 +95,28 @@ The solution is explained by the code below ::
     }
 
 
-# [REGISTRATION SYSTEM-4C](http://codeforces.com/problemset/problem/4/C)
+# REGISTRATION SYSTEM-4C
 
+## [PROBLEM EXPLANATION](http://codeforces.com/problemset/problem/4/C)
+The problem is called registration system. Just like a regular registration system, a data must be inputted. In this case, he sends to the system a request with his `name`. Each name must be different, thats why if he inputs the same exact name that is already exists in the system database, the system makes up a new user name, which is `name1, name2, ...`. If the name is not exists before, it outputted as `OK`. 
 
+## [SOLUTION]
+The idea is to use string and array if there is "overwrite data" in that registration system. String is for the name that is already exists, and array is to append the string one after another starting from 1. 
+First thing that we need to do is to detect which `name` is/are the same or not unique. In this case, we use `map`to "save" the `name` data to detect it later on. 
 
-## PROBLEM EXPLANATION 
+	int dataNum;
+	cin>>dataNum;
+	map<string,int>mp;
 
+	for(int i=0;i<n;i++)
+        {
+	    string name;
+       	    cin>>name;
+		if(mp[name]==0) // if there are no same name/data in the "map"
+		{
+		    cout<<"OK"<<endl; 
+		}
 
-
-	
-   
-
- 
-
+		else cout<<name<<mp[word]<<endl;
+		mp[name]++; // to detect the next
+		}
