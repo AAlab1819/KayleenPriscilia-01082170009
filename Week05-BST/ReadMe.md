@@ -100,7 +100,7 @@ The solution is explained by the code below ::
 ## [PROBLEM EXPLANATION](http://codeforces.com/problemset/problem/4/C)
 The problem is called registration system. Just like a regular registration system, a data must be inputted. In this case, he sends to the system a request with his `name`. Each name must be different, thats why if he inputs the same exact name that is already exists in the system database, the system makes up a new user name, which is `name1, name2, ...`. If the name is not exists before, it outputted as `OK`. 
 
-## [SOLUTION]
+## [SOLUTION](http://codeforces.com/problemset/submission/4/43798743)
 The idea is to use string and array if there is "overwrite data" in that registration system. String is for the name that is already exists, and array is to append the string one after another starting from 1. 
 First thing that we need to do is to detect which `name` is/are the same or not unique. In this case, we use `map`to "save" the `name` data to detect it later on. 
 
