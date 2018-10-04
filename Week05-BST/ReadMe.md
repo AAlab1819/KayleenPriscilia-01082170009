@@ -55,11 +55,54 @@ the `ans` is the largest integer between `ans` and `counter` for each loops unti
    Basically, there is a rooted tree where it has a root, vertex u (child of vertex v), vertex v (parent of vertex u), and a leaf (a vertex that doesn't have children and has a parent). We are asked to find out if the rooted tree is a spruce if its every non-leaf vertex has at least 3 leaf children, or not. The example of the input and output can be seen from the problem linked above. 
    
 ## [SOLUTION](http://codeforces.com/contest/913/submission/43742127)
+The solution is explained by the code below :: 
+
+	for(i=2; i<=spruceNum; i++)
+    {
+        cin>>roots[i]; // input the integer to show where is the root. 
+	
+       ++leaf[roots[i]]; 
+       /* each integer inputted will be saved into new array, which is 
+		leaf[roots[i]], means that in the array leaf in the index roots[i] that
+		was inputted, will be increase to show how many is the child from the parent.*/     			
+    }
+
+    for(i=1; i<=spruceNum; i++)
+    {
+        if(!leaf[i])
+        {
+		/*if the leaf index has an empty array, then the counter for each index
+		  inputted will be increase*/
+		 /*the empty array shows how many leaf that non-leaf vertex have. */ 
+            ++counter[roots[i]];
+        }
+    }
+  	 for(i=1; i<=spruceNum; i++)
+  	  {
+        if(leaf[i] && counter[i]<3) /*if the leaf[i] is not empty and it has less than 3 'leaf'*/ 						/*the i index will keep counting as long as it did not enter the if condition*/ 
+        {
+            break; 
+        }
+ 	   }
+
+    if(i>spruceNum) 
+    {
+       cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
 
 
 # [REGISTRATION SYSTEM-4C](http://codeforces.com/problemset/problem/4/C)
 
+
+
 ## PROBLEM EXPLANATION 
+
+
+
 	
    
 
