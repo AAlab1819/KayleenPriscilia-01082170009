@@ -30,6 +30,7 @@
 
 in this case, i use `for` looping because it seems like what we have to do to solve this case is to record all of the input (using array). and while  `k>0` where `k = employee[i]`, that employee[i] integer where the input is either the index of their manager or -1, will be recorded in a new index, which is index k. Example: 
 
+     input :
      5
     -1
      1
@@ -47,7 +48,20 @@ With that being said, `k = 1 ` and while k>0, `-1 = employee[1].` and the `count
 the `ans` is the largest integer between `ans` and `counter` for each loops until the  `for` looping is finished. 
 
 
-##
+# [CHRISTMAS PRUCE - 913B](http://codeforces.com/problemset/problem/913/B)
+
+## PPROBLEM EXPLANATION
+
+   Basically, there is a rooted tree where it has a root, vertex u (child of vertex v), vertex v (parent of vertex u), and a leaf (a vertex that doesn't have children and has a parent). We are asked to find out if the rooted tree is a spruce if its every non-leaf vertex has at least 3 leaf children, or not. The example of the input and output can be seen from the problem linked above. 
+   
+## [SOLUTION](http://codeforces.com/contest/913/submission/43742127)
+
+
+# [REGISTRATION SYSTEM-4C](http://codeforces.com/problemset/problem/4/C)
+
+## PROBLEM EXPLANATION 
+	
+   
 
  
 
