@@ -118,5 +118,5 @@ First thing that we need to do is to detect which `name` is/are the same or not 
 		}
 
 		else cout<<name<<mp[word]<<endl;
-		mp[name]++; // to detect the next
+		mp[name]++; // move on to the next index.
 		}
