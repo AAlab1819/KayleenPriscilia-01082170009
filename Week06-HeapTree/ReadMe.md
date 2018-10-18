@@ -103,3 +103,67 @@ And dont forget, *If change in z-score for any two topics is same, then rank the
             }
         }
     }
+    
+
+#[Find the Running Median](https://www.hackerrank.com/challenges/ctci-find-the-running-median/problem)
+
+## Problem Explanation 
+Input : Data number ( `dataNum`) 
+	`data[i]` 
+Output : the median for each data[length] 
+
+The problem basically asked user to output the median for each data input. 
+
+	Example : 
+	3 
+	2 ( 2 || median = 2) 
+	3 (2 3 || median = (2+3)/2)
+	1 (1 2 3 || median = (2) )
+
+## Solution 
+
+1. First thing that had to be done is to sort the data for each input. To sort the data, I use heapSort. 
+2. Since for every input it needed to be sort, the heapSort must be inside the `for` looping after user input an integer. 
+3. There are 2 condition. First, if the length of the data is odd and if the length is even. If the length is odd, then it simply just need to take the middle index to get the median. However, if the length is even, then there are no middle index. Example:
+	data : 1 2 3 4 
+	middle index : index 2 and index 3 
+So, we need to find the mean of the middle index that have 2 integer. In this case, i use the formula, `median[j](data[i/2]+data[i/2+1])/2;` to find the median. 
+4. The median that has been found, will be saved in other array, which is `median[]`. 
+
+	   for(int i=0; i<dataNum; i++)
+        {
+        cin >> data[i];
+        heapSort(data, i+1); //do heap sort every time data is inputted
+
+        if (i%2==0 )
+        {
+            /*if the data number so far is odd, then
+            the median will be at the n(as data number)/2*/
+
+            median[j] = data[i/2];
+            j++;
+        }
+        if(i%2!=0 )
+        {
+            /*if the data number so far is even, then
+            the median will be at the the sum of two data in
+            the middle index (n/2+(n/2+1)) divided by 2 */
+
+            median[j]= (data[i/2]+data[i/2+1])/2;
+            j++;
+        }
+     }
+    
+4. the precision of the output is 1. 
+
+  	 for(int i=0; i<dataNum; i++)
+   	 {
+          cout << setprecision(1) << fixed; // to set the float precision into 1
+          cout << median[i] << endl;
+   	 }
+	
+
+
+
+
+
