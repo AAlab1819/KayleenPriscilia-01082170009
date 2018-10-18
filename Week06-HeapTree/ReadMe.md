@@ -156,15 +156,10 @@ So, we need to find the mean of the middle index that have 2 integer. In this ca
     
 4. the precision of the output is 1. 
 
-
-  	  for(int i=0; i<dataNum; i++)
-   	  {
-           cout << setprecision(1) << fixed; // to set the float precision into 1
-           cout << median[i] << endl;
-   	  }
-	
-
-
-
+    `for looping`
+    `cout << setprecision(1) << fixed; // to set the float precision into 1`
+    `cout << median[i] << endl; 
+        
+   	  
 
 
