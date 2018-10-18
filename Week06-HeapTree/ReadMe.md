@@ -105,7 +105,7 @@ And dont forget, *If change in z-score for any two topics is same, then rank the
     }
     
 
-#[Find the Running Median](https://www.hackerrank.com/challenges/ctci-find-the-running-median/problem)
+# [Find the Running Median](https://www.hackerrank.com/challenges/ctci-find-the-running-median/problem)
 
 ## Problem Explanation 
 Input : Data number ( `dataNum`) 
@@ -152,15 +152,16 @@ So, we need to find the mean of the middle index that have 2 integer. In this ca
             median[j]= (data[i/2]+data[i/2+1])/2;
             j++;
         }
-     }
+        }
     
 4. the precision of the output is 1. 
 
-  	 for(int i=0; i<dataNum; i++)
-   	 {
-          cout << setprecision(1) << fixed; // to set the float precision into 1
-          cout << median[i] << endl;
-   	 }
+
+  	  for(int i=0; i<dataNum; i++)
+   	  {
+           cout << setprecision(1) << fixed; // to set the float precision into 1
+           cout << median[i] << endl;
+   	  }
 	
 
 
