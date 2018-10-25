@@ -36,7 +36,7 @@ so, in this case I use this implementation:
 
 ## [Problem Explanation](http://codeforces.com/problemset/problem/978/B)
 
-1. If the `n` char(s) string has more than 2 `x` in a row, then we must print how many `x` that need to be deleted in order to make it less than 3.
+1. If the `n` char(s) string has more than 2 `x` in a row, then we must print how many `x` that need to be removed in order to make it less than 3.
 
 ## [Solution](http://codeforces.com/contest/978/submission/44818220)
 
