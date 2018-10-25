@@ -1,6 +1,6 @@
 # PROBLEM 946A-PARTITION
 
-## [Problem Explanation]((http://codeforces.com/problemset/problem/946/A/))
+## [Problem Explanation](http://codeforces.com/problemset/problem/946/A)
 1. You may partition the sequence. (ex : partition : A and B)
 2. Find the sum for each partition part (sum of A part, and B part)
 3. Find the maximum possible value of A-B. (greedy part)
