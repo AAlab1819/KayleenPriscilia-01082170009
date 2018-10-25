@@ -12,14 +12,11 @@ int main()
     {
         cin >> a;
         a=a-r;
-        cout << "a =" << a << endl;
         if(0>a)
         {
-            cout << "BREAK" << endl;
             break;
         }
         r=a%2;
-        cout << "r = "<< r << endl;
     }
     if(r)
     {
